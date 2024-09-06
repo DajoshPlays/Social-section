@@ -1,0 +1,283 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --main-font: "League Spartan", sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+.hero-container{
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.h1-heading{
+    text-align: center;
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 0.9;
+    color: #502050;
+    font-family: var(--main-font);
+}
+.top-text{
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: var(--main-font);
+    color: #937b92;
+    
+}
+.h1-cont{
+    padding: 2rem;
+}
+.p-cont{
+    padding: 0 1.5rem;
+}
+.top-contain{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 4rem;
+    position: relative;
+}
+.reviewicon img{
+    padding-top: 1rem;
+}
+.absolute{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.review-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80vw;
+    margin: auto;
+    height: 50vh;
+}
+.review1{
+    background-color: #f7f2f7;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.review2{
+    background-color: #f7f2f7;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.review3{
+    background-color: #f7f2f7;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.r-text{
+    color: #502050;
+    font-weight: 900;
+    font-size: 1.6rem;
+    font-family: var(--main-font);
+}
+
+/* second container styling */
+.bottom-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+.box1{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    height: 40vh;
+    background-color: #502050;
+}
+.box2{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    height: 40vh;
+    background-color: #502050;
+}
+.box3{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    height: 40vh;
+    background-color: #502050;
+}
+.b-heading{
+    display: flex;
+    align-items: center;
+    height: 15vh;
+    gap: 15px;
+}
+.testimonial-text{
+    text-align: left;
+    color: #ee68a4;
+    font-family: var(--main-font);
+}
+.h3-heading{
+    text-align: left;
+    color: #f7f7f7;
+    font-family: var(--main-font);
+}
+.review-text{
+    text-align: left;
+    color: #f7f7f7;
+    padding: 1.5rem;
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+.testimonial-img{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    margin-left: 20px;
+}
+.absolute2{
+    display: none;
+}
+/* media Query for Laptop size */
+@media (min-width: 1024px){
+    .top-contain{
+        gap: 40px;
+        margin-bottom: 4rem;
+        position: relative;
+        flex-direction: row;
+        align-items: center;
+        width: 80vw;
+        margin: auto;
+        height: 80vh;
+    }
+    .h1-cont{
+        padding: 0;
+        margin-bottom: 2rem;
+        max-width: 60%;
+    }
+    .bottom-container{
+        flex-direction: row;
+    }
+    .hero-container{
+        flex-direction: column;
+        gap: 10px;
+        margin: 0;
+    }
+    .h1-heading{
+        text-align: left;
+        font-size: 5rem;
+        font-weight: 700;
+    }
+    .p-cont{
+        padding: 0;
+        max-width: 75%;
+    }
+    .top-text{
+        text-align: left;
+        font-size: 2.3rem;
+        line-height: 1.2;
+    }
+    .review-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        width: 80vw;
+        margin: auto;
+        height: 50vh;
+    }
+    .r-text{
+        font-size: 2.3rem;
+    }
+    .review1{
+        background-color: #f7f2f7;
+        border-radius: 10px;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        height: 8vh;
+        width: 75%;
+    }
+    .review2{
+        background-color: #f7f2f7;
+        border-radius: 10px;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        height: 8vh;
+        position: relative;
+        left: 50px;
+        width: 75%;
+    }
+    .review3{
+        background-color: #f7f2f7;
+        border-radius: 10px;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        height: 8vh;
+        position: relative;
+        left: 100px;
+        width: 75%;
+    }
+    .reviewicon img{
+        padding-top: 0;
+    }
+    .bottom-container{
+        height: 50vh;
+    }
+    .box1{
+        height: 30vh;
+        padding: 1.5rem;
+    }
+    .box2{
+        position: relative;
+        top: 30px;
+        height: 30vh;
+        padding: 1.5rem;
+    }
+    .box3{
+        position: relative;
+        top: 60px;
+        height: 30vh;
+        padding: 1.5rem;
+    }
+    .review-text{
+        font-size: 2.3rem;
+    }
+    .b-heading{
+        height: 10vh;
+    }
+    .h3-heading{
+        font-size: 2.5rem;
+    }
+    .testimonial-text{
+        font-size: 2.5rem;
+    }
+    .absolute2{
+        position: absolute;
+        top: 0;
+    }
+    .absolute{
+        display: none;
+    }
+}
