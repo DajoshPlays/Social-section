@@ -58,7 +58,6 @@ html{
     gap: 10px;
     width: 80vw;
     margin: auto;
-    height: 50vh;
 }
 .review1{
     background-color: #f7f2f7;
@@ -104,27 +103,26 @@ html{
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    height: 40vh;
     background-color: #502050;
+    padding: 3rem;
 }
 .box2{
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    height: 40vh;
     background-color: #502050;
+    padding: 3rem;
 }
 .box3{
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    height: 40vh;
     background-color: #502050;
+    padding: 3rem;
 }
 .b-heading{
     display: flex;
     align-items: center;
-    height: 15vh;
     gap: 15px;
 }
 .testimonial-text{
@@ -158,13 +156,11 @@ html{
 @media (min-width: 1024px){
     .top-contain{
         gap: 40px;
-        margin-bottom: 4rem;
         position: relative;
         flex-direction: row;
         align-items: center;
         width: 80vw;
-        margin: auto;
-        height: 80vh;
+        margin: 4rem auto;
     }
     .h1-cont{
         padding: 0;
@@ -178,6 +174,7 @@ html{
         flex-direction: column;
         gap: 10px;
         margin: 0;
+        flex: 1 1 50%;
     }
     .h1-heading{
         text-align: left;
@@ -197,10 +194,10 @@ html{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 10px;
-        width: 80vw;
-        margin: auto;
-        height: 50vh;
+        gap: 30px;
+        padding: 1.7rem;
+        flex: 1 1 50%;
+        /* margin: auto; */
     }
     .r-text{
         font-size: 2.3rem;
@@ -212,8 +209,7 @@ html{
         flex-direction: row;
         justify-content: center;
         gap: 20px;
-        height: 8vh;
-        width: 75%;
+        width: 85%;
     }
     .review2{
         background-color: #f7f2f7;
@@ -222,10 +218,9 @@ html{
         flex-direction: row;
         justify-content: center;
         gap: 20px;
-        height: 8vh;
         position: relative;
         left: 50px;
-        width: 75%;
+        width: 85%;
     }
     .review3{
         background-color: #f7f2f7;
@@ -234,39 +229,33 @@ html{
         flex-direction: row;
         justify-content: center;
         gap: 20px;
-        height: 8vh;
         position: relative;
-        left: 100px;
-        width: 75%;
+        left: 80px;
+        width: 85%;
     }
     .reviewicon img{
         padding-top: 0;
     }
-    .bottom-container{
-        height: 50vh;
-    }
+    /* .bottom-container{
+    } */
     .box1{
-        height: 30vh;
         padding: 1.5rem;
     }
     .box2{
         position: relative;
         top: 30px;
-        height: 30vh;
         padding: 1.5rem;
     }
     .box3{
         position: relative;
         top: 60px;
-        height: 30vh;
         padding: 1.5rem;
     }
     .review-text{
         font-size: 2.3rem;
     }
-    .b-heading{
-        height: 10vh;
-    }
+    /* .b-heading{
+    } */
     .h3-heading{
         font-size: 2.5rem;
     }
@@ -279,5 +268,9 @@ html{
     }
     .absolute{
         display: none;
+    }
+    .second-container{
+        padding: 4rem;
+        margin-bottom: 4rem;
     }
 }
